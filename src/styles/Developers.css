@@ -1,0 +1,138 @@
+/* Developers.css */
+
+.page-transition {
+  padding: 2rem 0;
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+  color: grey;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h1 {
+  font-size: 3rem;
+  color: #00e0ff;
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: #d1e9ff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.team-member {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.team-member:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  transform: translateY(-8px);
+}
+
+.member-image img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-bottom: 2px solid #00e0ff;
+}
+
+.member-content {
+  padding: 1.5rem;
+}
+
+.member-content h2 {
+  font-size: 1.5rem;
+  color: #00e0ff;
+  margin-bottom: 0.5rem;
+}
+
+.member-content h3 {
+  font-size: 1rem;
+  color: #f0f4f8;
+  opacity: 0.85;
+  margin-bottom: 1rem;
+}
+
+.member-content p {
+  font-size: 0.95rem;
+  color: #d1e9ff;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.member-social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.member-social a {
+  margin-right: 0.8rem;
+  font-size: 1.4rem;
+  color: #00e0ff;
+  transition: color 0.3s ease;
+}
+
+.member-social a:hover {
+  color: #ffffff;
+}
+
+.team-approach {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+}
+
+.team-approach h2 {
+  font-size: 2rem;
+  color: #00e0ff;
+  margin-bottom: 1rem;
+}
+
+.team-approach p {
+  font-size: 1rem;
+  color: #d1e9ff;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .section-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .member-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .member-content h3 {
+    font-size: 0.95rem;
+  }
+
+  .team-approach h2 {
+    font-size: 1.6rem;
+  }
+}
