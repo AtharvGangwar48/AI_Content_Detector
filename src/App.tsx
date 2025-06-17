@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Developers from './pages/Developers';
 import Trial from './pages/Trial';
 import Suggestion from './pages/Suggestion';
+import Error from './pages/Error';
 import ScrollToTop from './Scroll_to_top';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/developer" element={<Developers />} />
           <Route path="/trial" element={<Trial />} />
           <Route path="/suggestion" element={<Suggestion />} />
+          <Route path="/*" element={<Error />} />
         </Routes>
       </Layout>
     </Router>
