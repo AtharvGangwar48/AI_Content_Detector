@@ -77,13 +77,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
           {/* Mobile Navigation */}
           {isMobileMenuOpen && (
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.2 }}
-              className="md:hidden pb-4 flex flex-col space-y-2"
-            >
+            <div className="md:hidden pb-4 flex flex-col space-y-2">
               {navItems.map((item) => {
                 const Icon = item.icon;
                 return (
@@ -102,7 +96,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   </Link>
                 );
               })}
-            </motion.div>
+            </div>
           )}
         </div>
       </header>
