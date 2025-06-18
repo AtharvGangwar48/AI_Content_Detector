@@ -92,4 +92,4 @@ This project is for academic learning purposes under Graphic Era Hill University
 
 ---
 
-*For any queries, feel free to contact the team lead [Atharv Gangwar](mailto:your-email@example.com).*
+*For any queries, feel free to contact the team lead [Atharv Gangwar](atharvgangwar8@gmail.com).*
